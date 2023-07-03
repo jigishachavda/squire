@@ -1,0 +1,34 @@
+.offcanvas-basket {
+    width: auto !important;
+
+    .offcanvas-body-right {
+        padding: 70px 61px 20px 47px !important;
+        min-width: 416px;
+
+        .title {
+            padding-bottom: 21px;
+        }
+    }
+
+    .products-details-basket {
+        .single-basket {
+            margin-top: 20px;
+
+            .single-pro-img {
+                width: 92px;
+                height: 92px;
+            }
+        }
+    }
+}
+
+
+
+.offcanvas-body-left {
+    max-width: 362px;
+    padding: 57px 49px;
+    .main-img{
+        width: 259px;
+height: 259px;
+    }
+}

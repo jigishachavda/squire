@@ -1,0 +1,212 @@
+.main-header {
+    z-index: 1;
+
+    .upper-header {
+        @include generate-transition(all, 300ms, ease-in-out);
+    }
+
+    .top-links {
+        li {
+            padding: 0 15px;
+
+            &::after {
+                width: 1px;
+                height: 13px;
+                background-color: #fff;
+                content: '';
+                display: block;
+                position: absolute;
+                top: 60%;
+                right: 0%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:last-child {
+                padding-right: 0 !important;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    header {
+        @include generate-transition(all, 300ms, ease-in-out);
+
+        @include media-breakpoint-down(xl) {
+            padding-bottom: 20px;
+
+            .mobile-menu {
+                position: fixed;
+                top: 0;
+                z-index: 99;
+                left: 0;
+                width: 100%;
+                background-color: $primary !important;
+                overflow-y: auto;
+                height:100vh;
+                padding-top:110px;
+                li {
+                    a {
+                        font-size: $fontMS !important;
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+
+        .basket-btn {
+            .badge {
+                width: 17px;
+                height: 17px;
+                min-width: 17px;
+                line-height: 17px;
+            }
+        }
+
+        .right-content {
+            @include media-breakpoint-down(xl) {
+                margin-top: 10px;
+            }
+
+            .search-locks {
+                border: 1px solid $subGray;
+                min-width: 244px;
+                height: 49px;
+                line-height: 49px;
+                border-radius: 28px;
+                padding: 0 60px;
+
+                @include media-breakpoint-down(xl) {
+                    height: 43px;
+                    line-height: 43px;
+
+                    min-width: inherit;
+                    width: 100%;
+                }
+
+                &::placeholder {
+                    color: $subGray !important;
+                }
+            }
+
+
+        }
+
+        .header-link {
+            .sub-link {
+                margin-top: 32px;
+
+                @include media-breakpoint-down(xl) {
+                    margin-top: 23px;
+                }
+
+                &:hover {
+                    @include generate-transition(all, 300ms, ease-in-out);
+
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        background-color: $primary;
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                        z-index: 9;
+                    }
+
+                    .sub-dropdown {
+                        top: 128px;
+                        display: block !important;
+                        border-top: 1px solid rgba(213, 213, 213, 0.50);
+                    }
+                }
+
+                .header-main-link {
+                    padding-bottom: 32px;
+                    display: block !important;
+
+                    @include media-breakpoint-down(xl) {
+                        padding-bottom: 0px !important;
+                    }
+                }
+
+
+            }
+        }
+
+        .submenu-links {
+            li {
+                max-width: 300px;
+
+                .single-list {
+                    border-bottom: 1px solid #F2F2F2;
+                    padding: 10px 0;
+
+                    a {
+                        .pro-img {
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        span {
+                            margin-left: 34px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .dropdown-menu-img {
+            height: 519px;
+            margin-left: 120px;
+
+            .inner-content {
+                padding-top: 160px;
+                padding-left: 50px;
+                padding-right: 40px;
+            }
+        }
+
+        .search-list {
+            top: 68.5px;
+            padding: 20px 40px 14px 34px;
+            border-radius: 0 0 15px 15px;
+            border-top: 1px solid rgba(213, 213, 213, 0.50);
+            z-index: 9;
+
+            @include media-breakpoint-down(xl) {
+                border-top: none;
+                top: 63px;
+                padding: 25px 45px 40px 26px;
+            }
+
+            .single-search {
+                margin-bottom: 22px;
+
+                .pro-img {
+                    width: 71px;
+                    height: 71px;
+                }
+            }
+        }
+    }
+}
+
+.header-fixed {
+    border-bottom: 1px solid rgba(213, 213, 213, 0.50);
+
+    .upper-header {
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+    }
+
+    .sub-dropdown {
+        top: 89px !important;
+    }
+}

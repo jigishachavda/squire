@@ -1,0 +1,62 @@
+// slick-overflow
+.slick-overflow {
+  overflow: hidden;
+  .slick-slider {
+    .slick-list {
+      overflow: visible;
+    }
+  }
+}
+// Text overflow CSS 
+.text-truncate {
+  -webkit-box-orient: vertical;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.text-truncate2 {
+  -webkit-line-clamp: 2;
+}
+.text-truncate3 {
+  -webkit-line-clamp: 3;
+}
+.text-truncate4 {
+  -webkit-line-clamp: 4;
+}
+.text-truncate5 {
+  -webkit-line-clamp: 5;
+}
+.text-truncate6 {
+  -webkit-line-clamp: 6;
+}
+.text-truncate8 {
+  -webkit-line-clamp: 8;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+.top-left-center{
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.left-center{
+  top: 0%;
+  left:50%;
+  transform: translate(-50%, 0%);
+}
+.opacity-40{
+  opacity:0.40;
+}
+.opacity-15{
+  opacity:0.15;
+}
+main{
+  padding-top:128px;
+}
+.fit-content{
+  width:fit-content;
+}

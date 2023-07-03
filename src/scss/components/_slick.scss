@@ -1,0 +1,44 @@
+.slider-margin{
+    .slick-list{
+        margin:0 -8px;
+        
+        .slick-slide{
+            padding:0 8px;
+        }
+    }
+}
+
+.slider-visible{
+    .slick-list{
+        overflow: visible;
+    }
+}
+
+.feature-slider{
+    .slick-dots{
+        bottom:50px;
+        width:100%;
+        justify-content: start;
+        display:flex;
+        padding-left:92px;
+        li{
+            background: white;
+            opacity: 0.50 !important;
+            border-radius: 50%;
+            width: 9px;
+            height: 9px;   
+            button{
+                width: 9px;
+                height: 9px;    
+            }
+            &.slick-active{
+                opacity:1 !important;
+            }
+        }
+    }
+}
+
+
+.news-slider{
+
+}

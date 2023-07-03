@@ -1,0 +1,134 @@
+@import 'variables';
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+::selection {
+  color: white;
+  background: $primary;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none !important;
+}
+
+// default css
+.object-cover {
+  object-fit: cover;
+  object-position: center;
+}
+.object-contain {
+  object-fit:contain;
+  object-position: center;
+}
+.list-none {
+  list-style: none;
+}
+
+.transition {
+  transition: all 0.4s ease-in-out;
+}
+
+.rotate-circle {
+  transform: rotate(180deg);
+}
+
+.container {
+  max-width: 1280px;
+  @include media-breakpoint-up(xl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row>* {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fw-medium
+{
+  font-weight:500;
+}
+
+.fw-semibold
+{
+  font-weight:600;
+}
+
+.p-initial {
+  @include media-breakpoint-down(lg) {
+    position: initial !important;
+  }
+}
+
+.px-p {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.px-p-0 {
+  @include media-breakpoint-down(lg) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.px-p-r {
+  @include media-breakpoint-down(lg) {
+    padding-right: 0 !important;
+  }
+}
+
+.px-p-l {
+  @include media-breakpoint-down(lg) {
+    padding-left: 0 !important;
+  }
+}
+
+.px-p-b {
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7e7e7e;
+}

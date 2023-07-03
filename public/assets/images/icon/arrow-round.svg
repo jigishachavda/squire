@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+	<title>Ellipse 98-svg</title>
+	<defs>
+		<image width="8" height="14" id="img1" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3LjQ3NiIgaGVpZ2h0PSIxMy4yNzEiIHZpZXdCb3g9IjAgMCA3LjQ3NiAxMy4yNzEiPgogIDxwYXRoIGlkPSJQYXRoXzEyMzEwIiBkYXRhLW5hbWU9IlBhdGggMTIzMTAiIGQ9Ik0yODguNDg1LDE3NC4xNzJhLjI5Mi4yOTIsMCwwLDAsLjQxMy40MTNsNS44NDMtNS44NDNhLjI5Mi4yOTIsMCwwLDAsMC0uNDEzbC01Ljg0My01Ljg0M2EuMjkyLjI5MiwwLDAsMC0uNDEzLjQxM2w1LjYzOSw1LjYzOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yODcuODk5IC0xNjEuODk5KSIgZmlsbD0iI2Y4ZjhmOCIgc3Ryb2tlPSIjZjhmOGY4IiBzdHJva2Utd2lkdGg9IjEiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4K"/>
+	</defs>
+	<style>
+		.s0 { fill: #0a2b42 } 
+	</style>
+	<path id="Ellipse_98" class="s0" d="m16 32c-8.8 0-16-7.2-16-16 0-8.8 7.2-16 16-16 8.8 0 16 7.2 16 16 0 8.8-7.2 16-16 16z"/>
+	<use id="Path 12310" href="#img1" transform="matrix(1,0,0,1,13,9)"/>
+</svg>

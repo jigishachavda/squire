@@ -1,0 +1,23 @@
+footer {
+    background-color:#0B2A42;
+    .gallary-bottom {
+        .gallary-img {
+            height: 200px;
+        }
+    }
+
+    .input-signup {
+        height: 55px;
+
+        input {
+            padding: 0 100px 0 28px;
+            &::placeholder{
+                color:#707070;
+            }
+        }
+    }
+
+    .footer-link-sec{
+        border-top:1px solid rgba(243, 243, 243, 0.30);
+    }
+}

@@ -1,0 +1,24 @@
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+}
+
+.btnX {
+    width: 211px;
+    height: 55px;
+    line-height: 55px;
+}
+
+.cross-hover{
+    &:hover{
+        svg{    
+            transform:rotate(90deg);
+            @include generate-transition(all, 300ms, ease-in-out);
+
+        }
+    }
+}

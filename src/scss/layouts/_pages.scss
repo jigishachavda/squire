@@ -1,0 +1,293 @@
+.hero-bg {
+    height: 780px;
+    padding-top: 152px;
+}
+
+.what-searching-home {
+    padding: 115px 0;
+}
+
+.feature-section {
+    .single-feature {
+        .feature-img {
+            height: 692px;
+        }
+
+        .feature-content {
+            padding-left: 92px;
+
+            p {
+                padding-bottom: 190px;
+            }
+        }
+    }
+}
+
+.search-by-type {
+    padding-top: 115px;
+    padding-bottom: 170px;
+}
+
+.news-sec-home {
+    padding-top: 170px;
+    padding-bottom: 135px;
+}
+
+.category-bg {
+    height: 780px;
+    padding-top: 180px;
+}
+
+.view-bikes-section {
+    padding-top: 150px;
+    padding-bottom: 135px;
+
+    .view-bikes-img {
+        height: 590px;
+    }
+}
+
+.what-searching-category {
+    padding-bottom: 135px;
+}
+
+.trending-products {
+    padding-top: 180px;
+    padding-bottom: 170px;
+}
+
+.news-sec-cate {
+    padding-bottom: 125px;
+}
+
+.product-hero {
+    padding-top: 120px;
+    padding-bottom: 115px;
+    height: 360px;
+}
+
+
+
+.products-list {
+    padding-bottom: 120px;
+
+    .filters-option {
+        padding-right: 80px;
+
+        .accordion {
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        padding: 20px 0;
+                        position: relative;
+
+                        &::after {
+                            background-image: url("../images/icon/drop-down.svg");
+                            width: 12px;
+                            height: 7px;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .single-type {
+        margin-bottom: 60px;
+    }
+
+    .sort-by-btn {
+        .dropdown-toggle::after {
+            display: none;
+        }
+
+        button {
+            img {
+                transform: rotate(180deg);
+                @include generate-transition(all, 300ms, ease-in-out);
+            }
+
+            &.show {
+                img {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+
+    .pagination {
+        li {
+            .pagination-link {
+                height: 32px;
+                width: 32px;
+                line-height: 30px;
+
+                &:hover {
+                    background-color: $primary !important;
+                    color: #fff !important;
+                }
+            }
+
+            &.active {
+                .pagination-link {
+                    background-color: $primary !important;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
+
+.breadcum-custom {
+    ul {
+        li {
+            &::after {
+                content: '/';
+            }
+        }
+    }
+}
+
+.open-product-sec {
+    .products-details {
+        .left-content {
+            max-width: 784px;
+
+            .main-img {
+                height: 522px;
+            }
+
+            .second-img {
+                height: 369px;
+            }
+        }
+
+        .right-content {
+            max-width: 416px;
+
+            .add-quantity {
+                .quantity-btn {
+                    min-width: 92px;
+                    width: 92px;
+                    height: 55px;
+
+                    button {
+                        width: 18px;
+                        height: 18px;
+                        line-height: 14px;
+                    }
+
+                    .quantity-number {
+                        width: 38px;
+                    }
+                }
+            }
+
+            .secure-key {
+                padding: 23.45px 22px 25px 31.25px;
+            }
+
+            .product-accordion {
+                .accordion-button {
+                    &::after {
+                        background-image: url("../images/icon/drop-down.svg");
+                        width: 12px;
+                        height: 7px;
+                        background-size: cover;
+
+                    }
+                }
+
+                .description-accordion {
+                    li {
+                        padding-left: 32px;
+
+                        &::after {
+                            width: 9px;
+                            min-width: 9px;
+                            height: 9px;
+                            background-color: $textPrimary;
+                            border-radius: 50%;
+                            content: '';
+                            display: block;
+                            position: absolute;
+
+                            top: 8px;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+
+            .accreditations-list {
+                .logo-img {
+
+                    height: 95px;
+                }
+            }
+        }
+    }
+}
+
+.also-like-this {
+    padding-top: 115px;
+    padding-bottom: 195px;
+}
+
+.basket-table {
+    padding-top:12px;
+    padding-bottom:85px;
+    .product-row-main {
+
+        .main-single-row {
+            margin-bottom: 80px;
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+
+
+            .products-row {
+                .bg-pro {
+                    height: 92px;
+
+                }
+
+                .quantity-number {
+                    width: 35px;
+                }
+            }
+
+            .products-key-row {
+                .checkbox-container {
+                    padding-right: 32px;
+                }
+
+                .quantity-number {
+                    width: 35px;
+                }
+            }
+
+
+        }
+    }
+    .coupon-code{
+        .apply-code{
+            width:302px;
+            input{
+                height: 55px;
+                &::placeholder{
+                    color:$subGray;
+                }
+            }
+        }
+    }
+    .secure-card{
+        margin-top:32px;
+    }
+    .delivery-card{
+         padding:57px 33px 33px;
+         margin-left:20px;
+    }
+}

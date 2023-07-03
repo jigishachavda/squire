@@ -1,0 +1,176 @@
+// Theme Content CSS 
+.theme-content {
+ 
+}
+
+// FONT SIZE
+.fontX{
+    font-size:$fontX;
+}
+.fontXS{
+    font-size:$fontXS;
+}
+.fontXM{
+    font-size:$fontXM;
+}
+.fontXL{
+    font-size:$fontXL;
+}
+.fontS{
+    font-size:$fontS;
+}
+.fontSX{
+    font-size:$fontSX;
+}
+.fontSS{
+    font-size:$fontSS;
+}
+.fontSM{
+    font-size:$fontSM;
+}
+.fontSL{
+    font-size:$fontSL;
+}
+.fontM{
+    font-size:$fontM;
+}
+.fontMX{
+    font-size:$fontMX;
+}
+.fontMS{
+    font-size:$fontMS;
+}
+.fontMM{
+    font-size:$fontMM;
+}
+.fontML{
+    font-size:$fontML;
+}
+.fontL{
+    font-size:$fontL;
+}
+.fontLX{
+    font-size:$fontLX;
+}
+.open-text{
+    font-family: 'Open Sans', sans-serif;  
+}
+.ubuntu-text{
+    font-family: 'Ubuntu', sans-serif;
+}
+// FONT COLOR
+.text-primary{
+    color:$primary !important;
+}
+.text-secondary{
+    color:$secondary;
+}
+.textPrimary{
+    color:$textPrimary;
+}
+.text-subGray{
+    color:$subGray;
+}
+// BACKGROUND COLOR
+.bg-primary{
+    background-color:$primary !important;
+}
+.bg-secondary{
+    background-color:$secondary;
+}
+.bg-textPrimary{
+    background-color:$textPrimary;
+}
+.bg-lightGray{
+    background-color:$lightGray;
+}
+.bg-xsGray{
+    background-color:$xsGray;
+}
+.bg-smGray{
+    background-color:$smGray;
+}
+.bg-mdGray{
+    background-color:$mdGray;
+}
+.bg-lightPrimary{
+    background-color:$lightPrimary;
+}
+.bg-img{
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.bg-footer{
+    background-color:$footerBg;
+}
+.layer-bg{
+    background-color:$layerBg;
+}
+// LINE HEIGHT
+.smallLeading{
+    line-height:$smallLeading;
+}
+.mediumLeading{
+    line-height:$mediumLeading;
+}
+.normalLeading{
+    line-height:$normalLeading;
+}
+.largeLeading{
+    line-height:$largeLeading;
+}
+
+// BORDER RADIUS
+.primary-radius{
+    border-radius:$primaryRadius;
+}
+.secondary-radius{
+    border-radius:$secondaryRadius;
+}
+.primary-s-radius{
+    border-radius:$primarySRadius;
+}
+// LETTER SPACING
+.spaceX{
+    letter-spacing:$spaceX;
+}
+// BORDER COLOR
+.border-lightPrimary{
+    border:$lightPrimary;
+}
+.border-subGray{
+    border:1px solid $subGray !important;
+}
+.border-bottom{
+    border-top:none !important;
+    border-left:none !important;
+    border-right:none !important;
+}
+.border-top{
+    border-bottom:none !important;
+    border-left:none !important;
+    border-right:none !important;
+}
+
+
+
+
+// RESPONSIVE CSS
+
+.res-open-text{
+    @include media-breakpoint-down(lg) {
+        font-family: 'Open Sans', sans-serif !important;  
+    }
+}
+.res-ubuntu-text{
+    @include media-breakpoint-down(lg) {
+        font-family: 'Ubuntu', sans-serif !important;
+    }
+}
+
+.res-fw-medium{
+    @include media-breakpoint-down(lg) {
+        font-weight:500 !important; 
+    }
+}
