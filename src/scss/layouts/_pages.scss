@@ -291,3 +291,51 @@
          margin-left:20px;
     }
 }
+.product-order{
+    height: 503px;
+    width: 406px;
+    padding: 40px 32px 36px 32px;
+}
+.details-section{
+    padding-bottom: 166px;
+}
+.review-payment-section{
+    .accordion{
+        .accordion-item{
+            margin: 0 0 10px;
+            .accordion-header{
+                .accordion-button{
+                    box-shadow: none;
+                    &::after{
+                        background-image: url('../images/payment/plus.svg');
+                        transform: rotate(0);
+                        background-position: center center;
+                    }
+                    &[aria-expanded=true]{
+                        &::after{
+                            background-image: url('../images/payment/mainus.svg');
+                        }
+                        padding-bottom: 12px !important;
+                    }
+                }
+            }
+            .accordion-collapse{
+                padding-bottom: 30px;
+                .credit{
+                    padding: 12px;
+                }
+            }
+        }
+    }
+}
+.news-section{
+    margin-bottom: 172px;
+    .single-news-row{
+        margin-left: -8px;
+        margin-right: -8px;
+        .single-news{
+            padding: 0 8px;
+            margin-bottom: 80px;
+        }
+    }
+}
